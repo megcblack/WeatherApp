@@ -11,6 +11,8 @@
 		346032E32A13BD0C000110CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346032E22A13BD0C000110CE /* ContentView.swift */; };
 		346032E52A13BD0C000110CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346032E42A13BD0C000110CE /* Assets.xcassets */; };
 		346032E82A13BD0C000110CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346032E72A13BD0C000110CE /* Preview Assets.xcassets */; };
+		346032F02A13BD5A000110CE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346032EF2A13BD5A000110CE /* LocationManager.swift */; };
+		34F20B002A1657F70088A5E2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F20AFF2A1657F70088A5E2 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		346032E22A13BD0C000110CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		346032E42A13BD0C000110CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		346032E72A13BD0C000110CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		346032EF2A13BD5A000110CE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		34F20AFF2A1657F70088A5E2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		346032DF2A13BD0C000110CE /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				34F20AFE2A16579D0088A5E2 /* Views */,
 				346032E02A13BD0C000110CE /* WeatherAppApp.swift */,
-				346032E22A13BD0C000110CE /* ContentView.swift */,
+				346032EE2A13BD44000110CE /* Managers */,
 				346032E42A13BD0C000110CE /* Assets.xcassets */,
 				346032E62A13BD0C000110CE /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				346032E72A13BD0C000110CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		346032EE2A13BD44000110CE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				346032EF2A13BD5A000110CE /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		34F20AFE2A16579D0088A5E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				346032E22A13BD0C000110CE /* ContentView.swift */,
+				34F20AFF2A1657F70088A5E2 /* WelcomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			files = (
 				346032E32A13BD0C000110CE /* ContentView.swift in Sources */,
 				346032E12A13BD0C000110CE /* WeatherAppApp.swift in Sources */,
+				346032F02A13BD5A000110CE /* LocationManager.swift in Sources */,
+				34F20B002A1657F70088A5E2 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
