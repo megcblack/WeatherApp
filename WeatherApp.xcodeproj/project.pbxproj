@@ -13,6 +13,7 @@
 		346032E82A13BD0C000110CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346032E72A13BD0C000110CE /* Preview Assets.xcassets */; };
 		346032F02A13BD5A000110CE /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346032EF2A13BD5A000110CE /* LocationManager.swift */; };
 		34AE09A82A1665060030FC11 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AE09A72A1665060030FC11 /* LoadingView.swift */; };
+		34EA3A902A16B158006555F0 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EA3A8F2A16B158006555F0 /* WeatherManager.swift */; };
 		34F20B002A1657F70088A5E2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F20AFF2A1657F70088A5E2 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		346032E72A13BD0C000110CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		346032EF2A13BD5A000110CE /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		34AE09A72A1665060030FC11 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		34EA3A8F2A16B158006555F0 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		34F20AFF2A1657F70088A5E2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				346032EF2A13BD5A000110CE /* LocationManager.swift */,
+				34EA3A8F2A16B158006555F0 /* WeatherManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EA3A902A16B158006555F0 /* WeatherManager.swift in Sources */,
 				346032E32A13BD0C000110CE /* ContentView.swift in Sources */,
 				346032E12A13BD0C000110CE /* WeatherAppApp.swift in Sources */,
 				346032F02A13BD5A000110CE /* LocationManager.swift in Sources */,
