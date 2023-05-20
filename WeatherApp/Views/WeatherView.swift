@@ -33,7 +33,8 @@ struct WeatherView: View {
                     
                 }
                 HStack {
-                    HumidityIcon(weather: previewWeather)
+                    BlockIcon(number: weather.wind.speed, title: "Wind Speed", imageName: "wind")
+                    BlockIcon(number: weather.main.humidity, title: "humidity", imageName: "drop")
                 }
                 Spacer()
                 
