@@ -13,10 +13,21 @@ struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
     var body: some View {
         VStack {
+            Image("clouds")
+                .resizable()
+                .frame(width: 100, height: 100)
             VStack (spacing: 20) {
-                Text("Welcome to the Weather App")
-                    .bold().font(.title)
+                Text("Welcome to the")
+                    .font(.subheadline)
+                    .fontWeight(.light)
+                    .padding(.bottom, -10.0)
+                
+                Text("Weather App")
+                    .bold().font(.largeTitle)
+                    .padding(.top, -10)
                 Text("Please share your current location to get the weather in your area")
+                    .font(.subheadline)
+                    .fontWeight(.light)
                     .padding()
             }
             .multilineTextAlignment(.center)
