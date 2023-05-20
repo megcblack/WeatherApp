@@ -25,27 +25,28 @@ struct WeatherView: View {
                     
                     Spacer()
                     
-                    Text(weather.main.feelsLike.roundDouble() + "°")
+                    Text(weather.main.feelsLike.kelvinToFarenheit() + "°")
                         .font(.system(size: 65))
                         .fontWeight(.bold)
                         .padding(.trailing, -3.0)
                     
                     
                 }
+                HStack {
+                    HumidityIcon(weather: previewWeather)
+                }
                 Spacer()
                 
                 VStack {
                     HStack {
                         Text(weather.weather[0].main)
-                        Text(weather.main.feelsLike.roundDouble() + "°")
+                        Text(weather.main.feelsLike.kelvinToFarenheit() + "°")
                             .font(.system(size: 100))
                             .fontWeight(.bold)
                             .padding()
-                        
                     }
                 }
                 .frame(maxWidth: .infinity)
-                
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
