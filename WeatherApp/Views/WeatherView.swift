@@ -33,12 +33,16 @@ struct WeatherView: View {
                 .padding(.bottom)
                 
                 CurrentWeatherIcon(weather: weather.weather[0].description)
+                    .shadow(radius: 7)
                 
                 
                 HStack (spacing: 6) {
-                    BlockIcon(number: weather.wind.speed, title: "Wind Speed", imageName: "wind", unit: "mph")
-                    BlockIcon(number: weather.main.humidity, title: "humidity", imageName: "drop", unit: "%")
                     FeelsLikeIcon(temp: weather.main.feelsLike)
+                        .shadow(radius: 7)
+                    BlockIcon(number: weather.wind.speed, title: "Wind Speed", imageName: "wind", unit: "mph")
+                        .shadow(radius: 7)
+                    BlockIcon(number: weather.main.humidity, title: "humidity", imageName: "drop", unit: "%")
+                        .shadow(radius: 7)
                 }
                 .padding(-10)
                 

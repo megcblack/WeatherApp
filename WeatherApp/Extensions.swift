@@ -15,4 +15,11 @@ extension Double {
     func kelvinToFarenheit() -> String {
         return ((self - 273.15) * 9.0/5.0 + 32).roundDouble()
     }
+    
+    func toHoursAndMin() -> String {
+        let time = Date(timeIntervalSince1970: TimeInterval(self))
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mm a"
+        return dateFormatter.string(from: time)
+    }
 }
