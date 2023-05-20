@@ -11,15 +11,22 @@ struct BlockIcon: View {
     var number: Double
     var title: String
     var imageName: String
+    var unit: String
     var body: some View {
         VStack {
-            Text(number.roundDouble())
-                .font(.system(size: 50))
+            HStack {
+                Text(number.roundDouble())
+                    .font(.system(size: 40))
                 .fontWeight(.bold)
+                Text(unit)
+                    .font(.system(size: 12))
+                    .fontWeight(.bold)
+            }
             HStack {
                 Text(title)
-                    .font(.system(size: 12))
+                    .font(.system(size: 11))
                 Image(systemName: imageName)
+                    .font(.system(size: 10))
             }
         }
         .padding()
@@ -32,6 +39,6 @@ struct BlockIcon: View {
 
 struct BlockIcon_Previews: PreviewProvider {
     static var previews: some View {
-        BlockIcon(number: 64.4, title: "humidity", imageName: "drop")
+        BlockIcon(number: 64.4, title: "humidity", imageName: "drop", unit: "%")
     }
 }

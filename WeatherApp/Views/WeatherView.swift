@@ -25,29 +25,26 @@ struct WeatherView: View {
                     
                     Spacer()
                     
-                    Text(weather.main.feelsLike.kelvinToFarenheit() + "°")
+                    Text(weather.main.temp.kelvinToFarenheit() + "°")
                         .font(.system(size: 65))
                         .fontWeight(.bold)
                         .padding(.trailing, -3.0)
-                    
-                    
                 }
-                HStack {
-                    BlockIcon(number: weather.wind.speed, title: "Wind Speed", imageName: "wind")
-                    BlockIcon(number: weather.main.humidity, title: "humidity", imageName: "drop")
+                .padding(.bottom)
+                
+                CurrentWeatherIcon(weather: weather.weather[0].description)
+                
+                
+                HStack (spacing: 6) {
+                    BlockIcon(number: weather.wind.speed, title: "Wind Speed", imageName: "wind", unit: "mph")
+                    BlockIcon(number: weather.main.humidity, title: "humidity", imageName: "drop", unit: "%")
+                    FeelsLikeIcon(temp: weather.main.feelsLike)
                 }
+                .padding(-10)
+                
                 Spacer()
                 
-                VStack {
-                    HStack {
-                        Text(weather.weather[0].main)
-                        Text(weather.main.feelsLike.kelvinToFarenheit() + "°")
-                            .font(.system(size: 100))
-                            .fontWeight(.bold)
-                            .padding()
-                    }
-                }
-                .frame(maxWidth: .infinity)
+                
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
