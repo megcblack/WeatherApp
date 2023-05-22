@@ -45,7 +45,8 @@ struct WeatherView: View {
                         .shadow(radius: 7)
                 }
                 .padding(-10)
-                
+                SunIcon(riseTime: weather.sys.sunrise, setTime: weather.sys.sunset)
+                    .shadow(radius: 7)
                 Spacer()
                 
                 
